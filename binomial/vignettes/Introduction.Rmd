@@ -1,0 +1,31 @@
+---
+title: "Intro to the binom package"
+author: "Kevin Rosenberg"
+date: "April 27, 2019"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+```
+
+## Binomial Distribution
+
+This package is useful for learning about the binomial distribution of variables.  The scenario to keep in mind is the relative probabilities (over all possible values of K) of K heads in N tosses, if each toss has probability P of being heads. 
+
+## Bin_Choose
+
+This function performs the (n choose k) operation.  That is, it returns how many ways there are to achieve k successes in n trials.
+
+## Bin_Probability
+This function gives us the probability of a particularly amount of successes in N trials, given a value of P
+
+## Bin_Distribution
+This function allows us to have a distribution of the binomial variable, using the function above.  In order visualize such a distribution, it can be plotted with the plot.bindis function, by first calling bin_distribution, and then passing the return value as an argument.
+
+## Bin_Cumulative
+This function is similar to bin_distribution, but also keeps a running total of the probably of k successes or fewer, for each value of k.  This running total can be plotted with the plot.bincum function, by first calling bin_cumulative, and then passing the return value as an argument.
