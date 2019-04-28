@@ -38,30 +38,30 @@ devtools::install_github("stat133-sp19/hw-stat133-kevsters/binomial", build_vign
 
 ## Usage
 
-bin_choose(5, 2)
+- bin_choose(5, 2)
 
-bin_probability(success = 0:2, trials = 5, prob = 0.5)
+- bin_probability(success = 0:2, trials = 5, prob = 0.5)
 
-dis1 = bin_distribution(trials = 5, prob = 0.5) 
+- dis1 = bin_distribution(trials = 5, prob = 0.5) 
 
 plot.binvar(dis1)
 
-dis2 = bin_cumulative(trials = 5, prob = 0.5)
+- dis2 = bin_cumulative(trials = 5, prob = 0.5)
 
 plot.bincum(dis2)
 
-bin1 = bin_variable(10, 0.3)
+- bin1 = bin_variable(10, 0.3)
 
 binsum1 = summary(bin1)
 
 binsum1
 
-bin_mean(10, 0.3)
+- bin_mean(10, 0.3)
 
-bin_variance(10, 0.3)
+- bin_variance(10, 0.3)
 
-bin_mode(10, 0.3)
+- bin_mode(10, 0.3)
 
-bin_skewness(10, 0.3)
+- bin_skewness(10, 0.3)
 
-bin_kurtosis(10, 0.3)
+- bin_kurtosis(10, 0.3)
